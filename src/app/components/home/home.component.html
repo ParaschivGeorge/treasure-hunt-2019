@@ -1,0 +1,210 @@
+<!-- Home -->
+<section id="welcome" class="container-fluid">
+  <div class="masthead container-fluid mt-3 mt-sm-5 pt-2">
+    <div class="row">
+      <div class="col-sm-6 aspect-ratio">
+        <iframe class="mr-1" id="intro-video-laptop" width="100%" height="100%"
+                src="https://www.youtube.com/embed/PeRCDH_zUnU?playlist=PeRCDH_zUnU&autoplay=1&rel=0&loop=1"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4 my-sm-0 my-md-4 align-items-center">
+        <div class="mx-lg-5 mt-lg-5">
+          <div class="ml-3">
+            <img src="../../../assets/logo_Treasure_Hunt.svg" class="logo-th" alt="Treasure Hunt Bucharest"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 mt-3 mt-sm-5 text-center align-items-center">
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4">
+        <p class="mx-2" id="descriere-event">Te fascinează măreția și istoria Bucureștiului, dar nu ai reușit niciodată
+          să pornești într-o reală expediție a orașului? Nu este nicio problemă, LSAC se ocupă de asta! Vino sâmbătă, 20
+          octombrie la Treasure Hunt Bucharest, pentru a participa, alături de prietenii tăi, la o întrecere cu
+          ghicitori, provocări și premii!</p>
+      </div>
+
+      <div class="col-sm-1">
+        <iframe width="100%" class="mr-1" id="intro-video-mobile"
+                src="https://www.youtube.com/embed/PeRCDH_zUnU?playlist=PeRCDH_zUnU&autoplay=1&rel=0&loop=1"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="row mt-2" id="row-inscriere">
+      <div class="col-sm-7"></div>
+      <div class="col-sm-4 text-center">
+        <a [routerLink]="'/home/register'" id="buton-inscriere" class="js-scroll-trigger">Înscrie-te!</a>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+</section>
+
+<section id="event" style="margin-top: -50px; padding-top: 50px;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5 text-center mt-5 mt-sm-0 mx-2 mx-sm-5 mx-md-0">
+        <img src="../../../assets/insule5556.svg" height="90%" width="90%" class="img-fluid">
+      </div>
+
+      <div class="col-md-1"></div>
+
+      <div class="col-md-4 mt-4 mt-md-0">
+        <div class="rect-path">
+          <h3 class="text-center">Când?</h3>
+          Sâmbătă, 20 Octombrie 2018<br/>
+          10:00 - 11:00 - Check-in<br/>
+          11:00 - Startul competiției<br/>
+          17:00 - Încheierea competiției<br/>
+          17:30 - Festivitatea de premiere<br/>
+          <div class="mt-1"></div>
+          <h3 class="text-center">Unde ne vedem?</h3>
+          Clădirea Precis - parter<br/>
+          Campus Upb<br/>
+          Splaiul Independenței, nr 313,<br/>
+          Sector 6, București, România <br/>
+          <div class="mt-1"></div>
+          <h3 class="text-center">Cum ajung acolo?</h3>
+          Stații de metrou în apropiere: <b>Politehnica</b>, Grozăvești, <br/>Petrache Poenaru<br/>
+          RATB: 61, 62, 136, 236 si 336
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Register Section -->
+<section id="register">
+  <div class="container-fluid mt-5" id="sectiune-formular">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="section-title">
+          Înscrie-te!
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="informatii-formular">
+      <div class="row mb-3">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 pl-2">
+          <div class="rect-path">
+            -O echipă este formată din minim 3 membri, maxim 4;<br/>
+            -În cazul în care sunteți 2 persoane și vreți să participați împreună, vă veți înscrie amândoi individual și
+            veți menționa că doriți să fiți în aceeași echipă în câmpul destinat pentru acest caz;<br/>
+          </div>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 text-center mb-3 mb-lg-0 align-middle"><a id="btn-reg-indiv" [routerLink]="'/register-solo'">
+          Mă înscriu individual</a></div>
+        <div class="col-lg-4 text-center mt-5 mt-lg-0 align-middle"><a id="btn-reg-echipa" [routerLink]="'/register-team'">
+          Mă înscriu cu echipa</a></div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Guide Section -->
+<section id="guide">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title p-4" id="titlu-ghid">Ghidul participantului</div>
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-1 col-md-1"></div>
+      <div class="col-4 col-md-5 text-right">
+        <img src="../../../assets/ghid/ilustratie_harta.svg" height="50%" width="50%" id="img-harta"/>
+      </div>
+      <div class="col-6 col-md-5">
+        <p style="font-weight: 500;">Află tot ce trebuie să știi<br/> pentru o experiență optimă!</p>
+      </div>
+      <div class="col-1 col-md-1"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <a id="btn-ghid" class="d-inline-flex" [routerLink]="'/guide'">Vezi Ghidul</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Parteners Section -->
+<section id="partners" class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section-title">Parteneri</div>
+      </div>
+    </div>
+
+    <div class="row mt-5 align-items-center">
+<!--      todo: adauga parteneri aici-->
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="text-center mb-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section-title">Contact</div>
+      </div>
+    </div>
+
+    <div class="row p-3">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        Pentru orice întrebări ne poți scrie la adresa de e-mail<br/>
+        <b>treasure@lsacbucuresti.ro</b> sau poți sa ne laşi mesajul tău mai jos.
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+
+    <form id="contact-form">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <div class="container rect-path text-left">
+            <div class="form-group">
+              <label for="contactName">Nume:</label>
+              <input type="text" name="Nume" class="form-control" id="contactName" placeholder="Ion Popescu" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Adresă de email:</label>
+              <input type="email" name="Email" class="form-control" id="contactEmail" aria-describedby="emailHelp"
+                     placeholder="ion.popescu@xyz.com" required>
+              <small id="emailHelp" class="form-text text-muted">Datele tale vor ramane confidentiale.</small>
+            </div>
+            <div class="form-group">
+              <label for="message">Mesaj:</label>
+              <textarea name="Mesaj" class="form-control" id="message" rows="3" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 text-center mt-4">
+          <button type="submit" id="btn-send-contact">Trimite</button>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </form>
+  </div>
+</section>

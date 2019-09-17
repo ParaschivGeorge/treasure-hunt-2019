@@ -1,0 +1,42 @@
+<div class="container text-center" id="titlu"><h1>Înscriere individuala</h1></div>
+
+<form id="individual-form">
+  <div class="container mt-div" id="formular-ind">
+    <div class="rect-path">
+      <div class="form-group">
+        <label for="secondName">*Nume:</label>
+        <input type="text" name="Nume" class="form-control" id="secondName" placeholder="Popescu" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">*Prenume:</label>
+        <input type="text" name="Prenume" class="form-control" id="firstName" placeholder="Ion" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">*Număr de telefon:</label>
+        <input type="tel" name="Telefon" class="form-control" id="phone" placeholder="0712345678" required>
+      </div>
+      <div class="form-group">
+        <label for="college">*Facultate:</label>
+        <input type="text" name="Facultate" class="form-control" id="college" placeholder="Automatica si Calculatoare"
+               required>
+      </div>
+      <div class="form-group">
+        <label for="facebookLink">Link către profilul de Facebook:</label>
+        <input type="text" name="Facebook" class="form-control" id="facebookLink">
+      </div>
+      <div class="form-group">
+        <label for="withFriend">Dorești să fii în echipă cu altă persoană?<br/>Dacă da, completează numele
+          complet.</label>
+        <input type="text" name="Prieten" class="form-control" id="withFriend">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" name="Capitan" type="checkbox" value="DA" id="isCaptain">
+        <label class="form-check-label" for="isCaptain">Mi-ar plăcea să fiu căpitan.</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center mt-4 mb-5">
+    <button id="btn-send-form" type="submit">Trimite</button>
+  </div>
+</form>

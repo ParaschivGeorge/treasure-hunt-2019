@@ -1,0 +1,24 @@
+/*  Navigation  */
+#mainNav {
+  min-height: 46px;
+  background-color: #cda34f;
+  color: #613915;
+  border-bottom: 2px solid #613915;
+}
+
+.logo-lsac {
+  margin-left: 7.5vw;
+  width: 130px;
+  height: auto;
+}
+
+.nav-item {
+  color: #000000;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: 20px;
+  visibility: hidden;
+}

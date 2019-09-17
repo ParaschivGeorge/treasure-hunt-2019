@@ -1,61 +1,7 @@
 /*
-    Copyright: Liga Studentilor de la Automatica si Calculatoare, 2019
-    Event: Treasure Hunt Bucharest 2019
+    Copyright: Liga Studentilor de la Automatica si Calculatoare, 2018
+    Event: Treasure Hunt Bucharest 2018
 */
-
-/*  General  */
-body {
-  background: #e5e5e5 url("/assets/fundal_complet.svg") no-repeat;
-  background-size: 100% auto;
-  font-family: "Open Sans", sans-serif;
-  color: #603813;
-}
-
-.rect-path {
-  padding: 10px 24px;
-  border-radius: 15px;
-  border: 7px dashed #603813;
-}
-
-.vertical-align {
-  display: flex;
-  align-items: center;
-}
-
-.section-title {
-  font-size: 1.5em;
-  font-weight: 500;
-  background: url("assets/background_titlu.svg") no-repeat scroll 0 0 transparent;
-  background-size: 100% 100%;
-  color: #603813;
-  padding: 3.5vh;
-  margin: 2vw;
-}
-
-/*  Navigation  */
-#mainNav {
-  min-height: 46px;
-  background-color: #cda34f;
-  color: #613915;
-  border-bottom: 2px solid #613915;
-}
-
-.logo-lsac {
-  margin-left: 7.5vw;
-  width: 130px;
-  height: auto;
-}
-
-.nav-item {
-  color: #000000;
-}
-
-a.anchor {
-  display: block;
-  position: relative;
-  top: 20px;
-  visibility: hidden;
-}
 
 /*  Home page  */
 #home {
@@ -112,7 +58,7 @@ a.anchor {
 #btn-reg-indiv {
   font-size: 1em;
   font-weight: 500;
-  background: transparent url("assets/inscriere/buton_inscriere_individuala.svg") no-repeat scroll 0 3px;
+  background: transparent url("../../../assets/inscriere/buton_inscriere_individuala.svg") no-repeat scroll 0 3px;
   background-size: 100% auto;
   text-decoration: none;
   color: #603813;
@@ -124,14 +70,14 @@ a.anchor {
 }
 
 #btn-reg-indiv:hover {
-  background: url("assets/inscriere/buton_inscriere_individuala_hover.svg") no-repeat scroll 0 1px;
+  background: url("../../../assets/inscriere/buton_inscriere_individuala_hover.svg") no-repeat scroll 0 1px;
   background-size: 100% auto;
 }
 
 #btn-reg-echipa {
   font-size: 1em;
   font-weight: 500;
-  background: url("assets/inscriere/buton_inscriere_echipa.svg") no-repeat scroll 0 3px;
+  background: url("../../../assets/inscriere/buton_inscriere_echipa.svg") no-repeat scroll 0 3px;
   background-size: 100% auto;
   text-decoration: none;
   color: #603813;
@@ -143,14 +89,14 @@ a.anchor {
 }
 
 #btn-reg-echipa:hover {
-  background: url("assets/inscriere/buton_inscriere_echipa_hover.svg") no-repeat scroll 0 1px;
+  background: url("../../../assets/inscriere/buton_inscriere_echipa_hover.svg") no-repeat scroll 0 1px;
   background-size: 100% auto;
 }
 
 #buton-inscriere {
   font-size: 1.4em;
   font-weight: 500;
-  background: url("assets/inscriere/buton_inscriere.svg") no-repeat scroll 0 0 transparent;
+  background: url("../../../assets/inscriere/buton_inscriere.svg") no-repeat scroll 0 0 transparent;
   background-size: 100% auto;
   text-decoration: none;
   color: #603813;
@@ -162,7 +108,7 @@ a.anchor {
 }
 
 #buton-inscriere:hover {
-  background: url("assets/inscriere/buton_inscriere_hover.svg") no-repeat scroll 0 0 transparent;
+  background: url("../../../assets/inscriere/buton_inscriere_hover.svg") no-repeat scroll 0 0 transparent;
   background-size: 100% auto;
 }
 
@@ -181,7 +127,7 @@ a.anchor {
 #btn-ghid {
   font-size: 1.2em;
   font-weight: 500;
-  background: url("assets/buton_universal.svg") no-repeat scroll 0 5px;
+  background: url("../../../assets/buton_universal.svg") no-repeat scroll 0 5px;
   background-size: 100% auto;
   text-decoration: none;
   color: #603813;
@@ -193,7 +139,7 @@ a.anchor {
 }
 
 #btn-ghid:hover {
-  background: url("assets/buton_universal_hover.svg") no-repeat scroll 0 3px;
+  background: url("../../../assets/buton_universal_hover.svg") no-repeat scroll 0 3px;
   background-size: 100% auto;
 }
 
@@ -209,7 +155,7 @@ a.anchor {
 #btn-send-contact {
   font-size: 1.2em;
   font-weight: 500;
-  background: url("assets/inscriere/buton_inscriere.svg") no-repeat scroll 0 1px;
+  background: url("../../../assets/inscriere/buton_inscriere.svg") no-repeat scroll 0 1px;
   background-size: 100% auto;
   text-decoration: none;
   border: none;
@@ -222,7 +168,7 @@ a.anchor {
 }
 
 #btn-send-contact:hover {
-  background: url("assets/inscriere/buton_inscriere_hover.svg") no-repeat scroll 0 0px;
+  background: url("../../../assets/inscriere/buton_inscriere_hover.svg") no-repeat scroll 0 0px;
   background-size: 100% auto;
 }
 
@@ -249,7 +195,7 @@ a.anchor {
 
 @media (max-width : 576px) {
   body {
-    background: #e5e5e5 url("assets/mobile/fundal_complet3.svg") no-repeat;
+    background: #e5e5e5 url("../../../assets/mobile/fundal_complet3.svg") no-repeat;
     background-size: 100% auto;
     font-family: "Open Sans", sans-serif;
     color: #603813;
@@ -268,3 +214,5 @@ a.anchor {
     width: 100%;
   }
 }
+
+/*--------Utils----------*/
