@@ -1,121 +1,91 @@
-<div class="container text-center" id="titlu"><h1>Înscriere cu echipa</h1></div>
+<div id="register-team-page-container">
+  <div class="container text-left" id="titlu"><h1>Înscriere cu echipa</h1></div>
+  <form id="group-form" [formGroup]="registerTeamForm" (ngSubmit)="registerTeam()">
+    <div class="container mt-div">
+      <div class="row mb-4">
+        <div class="col-sm-2 text-sm-right"><label for="team-name" class="col-form-label">*Numele echipei:</label></div>
+        <div class="col-sm-4"><input formControlName="teamName" name="Nume Echipa" type="text" class="form-control" id="team-name" required></div>
+      </div>
+      <div class="row mx-1 mx-sm-0">
+        <div class="col-sm-4 rect-path mb-4 mb-sm-0" formGroupName="member1">
+          <h4 class="text-center">Membru</h4>
+          <div class="form-group">
+            <label for="secondName1">*Nume:</label>
+            <input formControlName="lastName" type="text" name="Nume1" class="form-control" id="secondName1" placeholder="Popescu" required>
+          </div>
+          <div class="form-group">
+            <label for="firstName1">*Prenume:</label>
+            <input formControlName="firstName" type="text" name="Prenume1" class="form-control" id="firstName1" placeholder="Ion" required>
+          </div>
+          <div class="form-group">
+            <label for="phone1">*Număr de telefon:</label>
+            <input formControlName="phone" type="tel" name="Telefon1" class="form-control" id="phone1" placeholder="0712345678" required>
+          </div>
+          <div class="form-group">
+            <label for="college1">*Facultate:</label>
+            <input formControlName="university" type="text" name="Facultate1" class="form-control" id="college1"
+                   placeholder="Automatica si Calculatoare" required>
+          </div>
+          <div class="form-group">
+            <label for="facebookLink1">Link către profilul de Facebook:</label>
+            <input formControlName="facebookLink" type="text" name="Facebook1" class="form-control" id="facebookLink1">
+          </div>
+        </div>
 
-<!-- 3 members form, with an additional one -->
-<form id="group-form">
-  <div class="container mt-div">
-    <div class="row mb-4">
-      <div class="col-sm-5 text-sm-right"><label for="team-name" class="col-form-label">*Numele echipei:</label></div>
-      <div class="col-sm-4"><input name="Nume Echipa" type="text" class="form-control" id="team-name" required></div>
-      <div class="col-sm-3"></div>
-    </div>
-    <div class="row mx-1 mx-sm-0">
-      <div class="col-sm-5 rect-path mb-4 mb-sm-0">
-        <h4 class="text-center">Căpitan</h4>
-        <div class="form-group">
-          <label for="secondName1">*Nume:</label>
-          <input type="text" name="Nume1" class="form-control" id="secondName1" placeholder="Popescu" required>
+        <div class="col-sm-4 rect-path mb-4 mb-sm-0" formGroupName="member2">
+          <h4 class="text-center">Membru</h4>
+          <div class="form-group">
+            <label for="secondName2">*Nume:</label>
+            <input formControlName="lastName" type="text" name="Nume2" class="form-control" id="secondName2" placeholder="Popescu" required>
+          </div>
+          <div class="form-group">
+            <label for="firstName2">*Prenume:</label>
+            <input formControlName="firstName" type="text" name="Prenume2" class="form-control" id="firstName2" placeholder="Ion" required>
+          </div>
+          <div class="form-group">
+            <label for="phone2">*Număr de telefon:</label>
+            <input formControlName="phone" type="tel" name="Telefon2" class="form-control" id="phone2" placeholder="0712345678" required>
+          </div>
+          <div class="form-group">
+            <label for="college2">*Facultate:</label>
+            <input formControlName="university" type="text" name="Facultate2" class="form-control" id="college2"
+                   placeholder="Automatica si Calculatoare" required>
+          </div>
+          <div class="form-group">
+            <label for="facebookLink2">Link către profilul de Facebook:</label>
+            <input formControlName="facebookLink" type="text" name="Facebook2" class="form-control" id="facebookLink2">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="firstName1">*Prenume:</label>
-          <input type="text" name="Prenume1" class="form-control" id="firstName1" placeholder="Ion" required>
-        </div>
-        <div class="form-group">
-          <label for="phone1">*Număr de telefon:</label>
-          <input type="tel" name="Telefon1" class="form-control" id="phone1" placeholder="0712345678" required>
-        </div>
-        <div class="form-group">
-          <label for="college1">*Facultate:</label>
-          <input type="text" name="Facultate1" class="form-control" id="college1"
-                 placeholder="Automatica si Calculatoare" required>
-        </div>
-        <div class="form-group">
-          <label for="facebookLink1">Link către profilul de Facebook:</label>
-          <input type="text" name="Facebook1" class="form-control" id="facebookLink1">
-        </div>
-      </div>
-      <div class="col-sm-2"></div>
-      <div class="col-sm-5 rect-path mb-4 mb-sm-0">
-        <h4 class="text-center">Membru</h4>
-        <div class="form-group">
-          <label for="secondName2">*Nume:</label>
-          <input type="text" name="Nume2" class="form-control" id="secondName2" placeholder="Popescu" required>
-        </div>
-        <div class="form-group">
-          <label for="firstName2">*Prenume:</label>
-          <input type="text" name="Prenume2" class="form-control" id="firstName2" placeholder="Ion" required>
-        </div>
-        <div class="form-group">
-          <label for="phone2">*Număr de telefon:</label>
-          <input type="tel" name="Telefon2" class="form-control" id="phone2" placeholder="0712345678" required>
-        </div>
-        <div class="form-group">
-          <label for="college2">*Facultate:</label>
-          <input type="text" name="Facultate2" class="form-control" id="college2"
-                 placeholder="Automatica si Calculatoare" required>
-        </div>
-        <div class="form-group">
-          <label for="facebookLink2">Link către profilul de Facebook:</label>
-          <input type="text" name="Facebook2" class="form-control" id="facebookLink2">
-        </div>
-      </div>
-    </div>
-    <div class="row mx-1 mx-sm-0 mt-sm-5 vertical-align">
-      <div class="col-sm-5 mb-4 mb-sm-0 rect-path">
-        <h4 class="text-center">Membru</h4>
-        <div class="form-group">
-          <label for="secondName3">*Nume:</label>
-          <input type="text" name="Nume3" class="form-control" id="secondName3" placeholder="Popescu" required>
-        </div>
-        <div class="form-group">
-          <label for="firstName3">*Prenume:</label>
-          <input type="text" name="Prenume3" class="form-control" id="firstName3" placeholder="Ion" required>
-        </div>
-        <div class="form-group">
-          <label for="phone3">*Număr de telefon:</label>
-          <input type="tel" name="Telefon3" class="form-control" id="phone3" placeholder="0712345678" required>
-        </div>
-        <div class="form-group">
-          <label for="college3">*Facultate:</label>
-          <input type="text" name="Facultate3" class="form-control" id="college3"
-                 placeholder="Automatica si Calculatoare" required>
-        </div>
-        <div class="form-group">
-          <label for="facebookLink3">Link către profilul de Facebook:</label>
-          <input type="text" name="Facebook3" class="form-control" id="facebookLink3">
-        </div>
-      </div>
-      <div class="col-sm-2"></div>
-      <div class="col-sm-5 rect-path" style="display: none" id="new-team-member">
-        <h4 class="text-center">Membru</h4>
-        <div class="form-group">
-          <label for="secondName4">*Nume:</label>
-          <input type="text" name="Nume4" class="form-control" id="secondName4" placeholder="Popescu">
-        </div>
-        <div class="form-group">
-          <label for="firstName4">*Prenume:</label>
-          <input type="text" name="Prenume4" class="form-control" id="firstName4" placeholder="Ion">
-        </div>
-        <div class="form-group">
-          <label for="phone4">*Număr de telefon:</label>
-          <input type="tel" name="Telefon4" class="form-control" id="phone4" placeholder="0712345678">
-        </div>
-        <div class="form-group">
-          <label for="college4">*Facultate:</label>
-          <input type="text" name="Facultate4" class="form-control" id="college4"
-                 placeholder="Automatica si Calculatoare">
-        </div>
-        <div class="form-group">
-          <label for="facebookLink4">Link către profilul de Facebook:</label>
-          <input type="text" name="Facebook4" class="form-control" id="facebookLink4">
-        </div>
-      </div>
-      <div class="col-sm-5 mt-5 mt-sm-0 text-center" id="add-team-member">
-        <a onclick="show()"><img src="../../../assets/inscriere/adauga_membru.svg" height="30%" width="30%" id="img-plus"/></a>
-      </div>
-    </div>
-  </div>
 
-  <div class="container text-center my-5">
-    <button id="btn-send-form" style="border: none;">Trimite</button>
-  </div>
-</form>
+        <div class="col-sm-4 rect-path mb-4 mb-sm-0" formGroupName="member3">
+          <h4 class="text-center">Membru</h4>
+          <div class="form-group">
+            <label for="secondName3">*Nume:</label>
+            <input formControlName="lastName" type="text" name="Nume3" class="form-control" id="secondName3" placeholder="Popescu" required>
+          </div>
+          <div class="form-group">
+            <label for="firstName3">*Prenume:</label>
+            <input formControlName="firstName" type="text" name="Prenume3" class="form-control" id="firstName3" placeholder="Ion" required>
+          </div>
+          <div class="form-group">
+            <label for="phone3">*Număr de telefon:</label>
+            <input formControlName="phone" type="tel" name="Telefon3" class="form-control" id="phone3" placeholder="0712345678" required>
+          </div>
+          <div class="form-group">
+            <label for="college3">*Facultate:</label>
+            <input formControlName="university" type="text" name="Facultate3" class="form-control" id="college3"
+                   placeholder="Automatica si Calculatoare" required>
+          </div>
+          <div class="form-group">
+            <label for="facebookLink3">Link către profilul de Facebook:</label>
+            <input formControlName="facebookLink" type="text" name="Facebook3" class="form-control" id="facebookLink3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center my-5">
+      <button id="btn-send-form" style="border: none;">Trimite</button>
+    </div>
+  </form>
+</div>
