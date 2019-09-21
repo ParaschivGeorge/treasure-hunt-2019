@@ -4,6 +4,22 @@
 */
 
 /*  General  */
+input.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+textarea.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+input.ng-valid.ng-touched {
+  border: inherit;
+}
+
+textarea.ng-valid.ng-touched {
+  border: inherit;
+}
+
 body {
   background: #e5e5e5 url("/assets/fundal_complet.svg") no-repeat;
   background-size: 100% auto;
@@ -103,6 +119,7 @@ a.anchor {
 #row-inscriere {
   margin-bottom: 12vw;
 }
+
 /*  Inscriere  */
 #inscriere {
   margin-top: 8vw;
@@ -201,6 +218,7 @@ a.anchor {
 #parteneri {
   margin-top: 8vw;
 }
+
 /* Contact */
 #contact {
   margin-top: 5vw;
@@ -222,7 +240,7 @@ a.anchor {
 }
 
 #btn-send-contact:hover {
-  background: url("assets/inscriere/buton_inscriere_hover.svg") no-repeat scroll 0 0px;
+  background: url("assets/inscriere/buton_inscriere_hover.svg") no-repeat scroll 0 0;
   background-size: 100% auto;
 }
 
@@ -241,13 +259,14 @@ a.anchor {
     height: auto;
   }
 }
+
 @media (max-width: 992px) {
   #row-inscriere {
     margin-bottom: 0.8vw;
   }
 }
 
-@media (max-width : 576px) {
+@media (max-width: 576px) {
   body {
     background: #e5e5e5 url("assets/mobile/fundal_complet3.svg") no-repeat;
     background-size: 100% auto;

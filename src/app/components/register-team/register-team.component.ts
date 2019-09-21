@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {Participant} from '../../models/participant';
+import {MainService} from '../../services/main.service';
 
 @Component({
   selector: 'app-register-team',
@@ -9,36 +10,37 @@ import {Participant} from '../../models/participant';
 })
 export class RegisterTeamComponent implements OnInit {
 
-  constructor() { }
+  registerSuccess = false;
+  registerError = false;
 
   teamNameFormControl: FormControl = new FormControl(null, Validators.required);
 
   registerTeam1Form: FormGroup = new FormGroup({
-    lastName: new FormControl(null, [Validators.required]),
-    firstName: new FormControl(null, [Validators.required]),
-    phone: new FormControl(null, [Validators.required]),
-    university: new FormControl({ value: 'Automatica si Calculatoare', disabled: true }, [Validators.required]),
-    facebookLink: new FormControl(null, ),
+    lastName: new FormControl(null, [Validators.required, Validators.pattern('[a-zA-Z ]*')]),
+    firstName: new FormControl(null, [Validators.required, Validators.pattern('[a-zA-Z ]*')]),
+    phone: new FormControl(null, [Validators.required, Validators.pattern('07[0-9]{8}')]),
+    university: new FormControl({value: 'Automatica si Calculatoare', disabled: true}, [Validators.required]),
+    facebookLink: new FormControl(null),
     team: new FormControl(null),
     preferredTeammate: new FormControl({value: null, disabled: true})
   });
 
   registerTeam2Form: FormGroup = new FormGroup({
-    lastName: new FormControl(null, [Validators.required]),
-    firstName: new FormControl(null, [Validators.required]),
-    phone: new FormControl(null, [Validators.required]),
-    university: new FormControl({ value: 'Automatica si Calculatoare', disabled: true }, [Validators.required]),
-    facebookLink: new FormControl(null, ),
+    lastName: new FormControl(null, [Validators.required, Validators.pattern('[a-zA-Z ]*')]),
+    firstName: new FormControl(null, [Validators.required, Validators.pattern('[a-zA-Z ]*')]),
+    phone: new FormControl(null, [Validators.required, Validators.pattern('07[0-9]{8}')]),
+    university: new FormControl({value: 'Automatica si Calculatoare', disabled: true}, [Validators.required]),
+    facebookLink: new FormControl(null),
     team: new FormControl(null),
     preferredTeammate: new FormControl({value: null, disabled: true})
   });
 
   registerTeam3Form: FormGroup = new FormGroup({
-    lastName: new FormControl(null, [Validators.required]),
-    firstName: new FormControl(null, [Validators.required]),
-    phone: new FormControl(null, [Validators.required]),
+    lastName: new FormControl(null, [Validators.required, Validators.pattern('[a-zA-Z ]*')]),
+    firstName: new FormControl(null, [Validators.required, Validators.pattern('[a-zA-Z ]*')]),
+    phone: new FormControl(null, [Validators.required, Validators.pattern('07[0-9]{8}')]),
     university: new FormControl('Automatica si Calculatoare', [Validators.required]),
-    facebookLink: new FormControl(null, ),
+    facebookLink: new FormControl(null),
     team: new FormControl(null),
     preferredTeammate: new FormControl({value: null, disabled: true})
   });
@@ -50,9 +52,15 @@ export class RegisterTeamComponent implements OnInit {
     member3: this.registerTeam3Form,
   });
 
+  constructor(private mainService: MainService) {
+  }
+
   ngOnInit() {
     window.scrollTo({top: 0, behavior: 'auto'});
-    console.log(this.registerTeamForm);
+    this.registerTeamForm.valueChanges.subscribe(() => {
+      this.registerSuccess = false;
+      this.registerError = false;
+    });
   }
 
   registerTeam() {
@@ -66,6 +74,29 @@ export class RegisterTeamComponent implements OnInit {
       participant2.team = teamName;
       participant3.team = teamName;
       console.log(teamName, participant1, participant2, participant3);
+      const participants = [participant1, participant2, participant3];
+      let registeredMembers = 0;
+      participants.forEach(participant => {
+        this.mainService.createParticipant(participant)
+          .then(res => {
+            console.log('Participant added:', res);
+            registeredMembers++;
+            this.resetForm(registeredMembers);
+          })
+          .catch(err => {
+            console.log(err);
+            this.registerError = true;
+            this.registerSuccess = false;
+          });
+      });
+    }
+  }
+
+  resetForm(registeredMembers: number) {
+    if (registeredMembers >= 3) {
+      this.registerTeamForm.reset();
+      this.registerSuccess = true;
+      this.registerError = false;
     }
   }
 

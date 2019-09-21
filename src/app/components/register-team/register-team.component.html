@@ -87,5 +87,11 @@
     <div class="container text-center my-5">
       <button id="btn-send-form" style="border: none;">Trimite</button>
     </div>
+    <div class="container text-center my-5" *ngIf="registerSuccess">
+      Echipa a fost inregistrata!
+    </div>
+    <div class="container text-center my-5" *ngIf="registerError">
+      A apărut o eroare, te rog încearcă mai târziu.
+    </div>
   </form>
 </div>

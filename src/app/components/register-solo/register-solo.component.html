@@ -34,6 +34,8 @@
         </div>
       </div>
       <button id="btn-send-form" type="submit">Trimite</button>
+      <div *ngIf="registerSuccess">Te-ai înregistrat!</div>
+      <div *ngIf="registerError">A apărut o eroare, te rog încearcă mai târziu.</div>
     </div>
   </div>
 </form>
