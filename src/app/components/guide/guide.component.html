@@ -1,28 +1,23 @@
-<div class="container text-center" id="titlu"><h1>Ghidul Participantului</h1></div>
-
 <section class="container" id="ghid">
+
   <div class="rect-path">
+    <div class="text-center" id="titlu"><h1>Ghidul Participantului</h1></div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-6 text-justify">
         <h4 class="text-center">Cum mă înscriu?</h4>
-        Înscrierea o poți face <a [routerLink]="'/home/register'">aici</a>. Echipele vor fi formate din 3 sau 4 membri, în
-        funcție de preferințe.<br/>
-        Te poți înscrie individual, fiind apoi repartizat automat în echipă cu alți participanți sau te poți înscrie
-        împreună cu prietenii tăi.<br/>
-        Dacă dorești să te înscrii cu un singur prieten, veți face amândoi înscriere individuală, dar veți completa în
-        câmpul special destinat numele prietenului. Echipa voastră va fi completată apoi cu alți participanți care au
-        făcut înscriere individuală.<br/>
-        <b>Atenție!</b> Dacă te înscrii împreună cu echipa, cel puțin 2 dintre prietenii tăi trebuie să fie
-        înmatriculați la Facultatea de Automatică și Calculatoare și toți trebuie să fiți studenți în București!<br/>
-        Dacă te înscrii individual, trebuie să fii student la Facultatea de Automatica și Calculatoare.<br/>
-        Cu 2 zile înainte de eveniment (pe 18 Octombrie) va apărea pe site lista cu echipele.<br/>
+        Înscrierea o poți face <a [routerLink]="'/home/register'">aici</a>. Echipele vor fi formate din 3 membri, cel puțin 2 din ACS.<br/>
+        Te poți înscrie atât individual (doar dacă ești membru ACS, fiind apoi repartizat automat în echipă cu alți
+        participanți), cât și împreună cu prietenii tăi.<br/>
+        Dacă dorești să te înscrii cu un singur prieten, veți face amândoi înscriere individuală, dar trebuie ca
+        amândoi să fiți din ACS și să completați în câmpul special destinat numele prietenului. Echipa voastră va
+        fi apoi completată cu alți participanți care au făcut înscriere individuală.<br/>
 
         <h4 class="text-center mt-3">De ce am deschis evenimentul și către studenții altor facultăți?</h4>
         Cu toate că reprezentăm studenții Facultății de Automatică și Calculatoare, aceștia pot veni însoțiți de
         prietenii lor, pentru a le oferi o experiență cât mai plăcută tuturor.<br/>
 
         <h4 class="text-center mt-3">Care este următorul pas?</h4>
-        Tot cu 2 zile înainte de eveniment, vei fi sunat pentru a confirma prezența. Dacă te-ai înscris individual, îți
+        Cu 2 zile înainte de eveniment, vei fi sunat pentru a confirma prezența. Dacă te-ai înscris individual, îți
         vom cere permisiunea pentru a le da coechipierilor tăi numărul tău de telefon.<br/>
         În cazul în care nu confirmi prezența, coechipierii tăi vor fi anunțați de acest lucru și vor fi
         redistribuiți.<br/>
@@ -32,38 +27,56 @@
         legitimației de transport) dacă ești student în București și/sau la Facultatea de Automatică și
         Calculatoare.<br/>
         Dacă te-ai înscris individual, aici ai ocazia să îți cunoști live coechipierii și să vă faceți un plan de
-        bătaie. Vi se vor înmâna, de asemenea, și prima ghicitoare și parola pe care o veți folosi pentru a cere
-        indicii.<br/>
+        bătaie.<br/>
+        Vi se va face, de asemenea, un tutorial de utilizare al aplicației în cadrul căreia se va desfășura mare
+        parte din eveniment urmând mai apoi o sesiune de întrebări cu nelămuririle voastre. În cele din urmă, veți
+        primi codurile QR prin intermediul cărora se va face înscrierea în aplicație în echipă din care faceți parte.<br/>
         Înaintea strigării startului, se va citi regulamentul competiției și vi se vor da detalii legate de mijloacele
         de transport în comun și orientarea în oraș.<br/>
 
-      </div>
-      <div class="col-sm-6">
-        <h4 class="text-center mt-3 mt-sm-0">La ce ne folosesc ghicitorile?</h4>
-        Ele vă vor îndruma spre checkpointurile competiției. Răspunsul la ghicitoare este locația checkpointului la care
-        trebuie să ajungeți.<br/>
-
         <h4 class="text-center mt-3">Cum sunt evidențiate checkpointurile?</h4>
-        Toate checkpointurile competiției vor fi amplasate în zone accesibile și vor fi evidențiate prin steaguri LSAC,
-        iar voluntarii vor purta tricoul evenimentului.<br/>
+        Toate checkpoint-urile competiției vor fi amplasate în zone accesibile și vor fi evidențiate atât virtual, în
+        cadrul aplicației, prin intermediul unor pin-uri specifice, cât și fizic, prin steaguri LSAC și voluntari ce
+        vor purta tricoul evenimentului.<br/>
+      </div>
+
+      <div class="col-sm-6  text-justify">
 
         <h4 class="text-center mt-3">Ce se întâmplă la checkpoint?</h4>
-        Aici, voluntarii vă vor cere ghicitorile de până acum pentru a verifica dacă sunteți în locația corectă. De
-        aceea este foarte important să nu le pierdeți!<br/>
-        Apoi, împreună, veți îndeplini o provocare fun, specifică locației. Ca premiu, voluntarii vă vor înmâna
-        următoarea ghicitoare, care vă îndrumă spre altă locație.<br/>
-        Traseul vostru va fi format din 5 checkpointuri, deci veți avea 5 ghicitori și 5 provocări.<br/>
-        Pentru acestea, aveți la dispoziție 6 ore. Găsiți programul evenimentului <a [routerLink]="'/home/event'">aici</a>.<br/>
+        Aici voluntarii vă vor pune la încercare printr-o probă fizică. În urmă completării acesteia, voluntarul vă
+        va înmâna un cod QR care va debloca probele din cadrul aplicației.<br/>
+        Nu există un traseu predefinit. Toate cele 10 locații vor fi vizibile încă de la începutul evenimentului,
+        având libertatea să vă formați singuri traseul. Țineți cont însă de faptul că locațiile mai puțin accesibile
+        vor avea probe ce valorează mai multe puncte, spre deosebire de cele ușor accesibile (precum cele din
+        apropierea stațiilor de metrou).<br/>
+        Astfel, aveți la dispoziție 6 ore să îndepliniți cât mai multe probe în cât mai multe locații. Programul
+        evenimentului poate fi găsit  <a [routerLink]="'/home/event'">aici</a>.<br/>
 
-        <h4 class="text-center mt-3">Ce se întâmplă dacă nu reușim să găsim soluția ghicitorii?</h4>
-        Aveți la dispoziție 2 hinturi. Pe toată perioada competiției, pe site veți găsi un buton special (I need a
-        clue). Butonul vă va duce într-o pagină unde completați numărul echipei, parola și codul ghicitorii actuale.
-        După ce trimiteți cererea, veți primi o nouă ghicitoare prin mesaj pe telefon în cel mai scurt timp (ghicitoarea
-        va fi trimisă, pentru siguranță, tuturor membrilor echipei).<br/>
+        <h4 class="text-center mt-3">Ce se întâmplă dacă nu reușim să îndeplinim o provocare din aplicație?</h4>
+        Fiecare probă poate fi refăcută în cazul în care nu ați reușit să o îndepliniți din prima încercare. De
+        asemenea, nu este necesară terminarea tuturor probelor dintr-o locație. Vă puteți deplasa și rezolva alte
+        probe oricând doriți. Țineți însă cont de faptul că nu veți mai primi punctajul bonus acordat pentru
+        îndeplinirea tuturor probelor dintr-o anumită locație.<br/>
 
-        <h4 class="text-center mt-3">Ce se întâmplă când ajungem la ultimul checkpoint?</h4>
-        Când ajungeți în cea de a 5-a locație, după efectuarea provocării, primiți un bilet specific. Cu el trebuie să
-        vă întoarceți la punctul de pornire (în clădirea Precis) și să îl predați voluntarilor.<br/>
+        <h4 class="text-center mt-3 mt-sm-0">Unde pot vedea clasamentul?</h4>
+        Clasamentul va fi disponibil la finalul celor 6 ore în cadrul festivității de premiere. De asemenea, pe tot
+        parcursul evenimentului, puteți vedea ce punctaj ați obținut în timp real, cu ajutorul aplicației.<br/>
+
+        <h4 class="text-center mt-3">Ce se întâmplă după ce se termină cele 6 ore?</h4>
+        În momentul în care au trecut cele 6 ore, în cadrul aplicației locațiile și probele vor deveni indisponibile,
+        iar toți participanții sunt rugați să se îndrepte spre punctul de pornire (clădire Precis) în vederea
+        participării la festivitatea de premiere. Prin intermediul acesteia veți afla rezultatele și vă veți revendica
+        premiile obținute din mystery box-uri..<br/>
+
+        <h4 class="text-center mt-3">Ce sunt mystery box-urile?</h4>
+        În drumul spre locațiile evenimentului, în cadrul aplicației vor aprea mystery box-uri ce conțin premii.<br/>
+        Acestea pot fi revendicate mai apoi la finalul competiției în cadrul festivității de premiere. Tot ce trebuie
+        să faceți este să prezentați itemele obținute din inventarul vostru voluntarilor noștri, iar aceștia vă vor
+        înmâna premiul.<br/>
+
+        <h4 class="text-center mt-3">Ce sunt rolurile?</h4>
+        Fiecare membru din echipă va avea atribuit un rol care îi va permite să rezolve doar un anumit tip de
+        probă din cadrul aplicației, specifică acestuia. Rolurile sunt Runner, Explorer și Escaper.<br/>
       </div>
     </div>
     <div class="row">
