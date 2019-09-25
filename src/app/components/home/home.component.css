@@ -12,6 +12,8 @@
 #logo_leplace {
   margin: 0 auto;
   cursor: pointer;
+  max-width: 300px;
+  max-height: 83px;
 }
 
 .logo-th {
