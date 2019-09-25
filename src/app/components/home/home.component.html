@@ -24,9 +24,9 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-4">
         <p class="mx-2" id="descriere-event">Te fascinează măreția și istoria Bucureștiului, dar nu ai reușit niciodată
-          să pornești într-o reală expediție a orașului? Nu este nicio problemă, LSAC se ocupă de asta! Vino sâmbătă, 20
+          să pornești într-o reală expediție a orașului? Nu este nicio problemă, LSAC se ocupă de asta! Vino sâmbătă, 19
           octombrie la Treasure Hunt Bucharest, pentru a participa, alături de prietenii tăi, la o întrecere cu
-          ghicitori, provocări și premii!</p>
+          provocări inedite și premii!</p>
       </div>
 
       <div class="col-sm-1">
@@ -50,7 +50,7 @@
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-5 text-center mt-5 mt-sm-0 mx-2 mx-sm-5 mx-md-0">
-        <img src="../../../assets/insule5556.svg" height="90%" width="90%" class="img-fluid">
+        <img src="../../../assets/insule.svg" height="90%" width="90%" class="img-fluid details-img">
       </div>
 
       <div class="col-md-1"></div>
@@ -58,8 +58,8 @@
       <div class="col-md-4 mt-4 mt-md-0">
         <div class="rect-path">
           <h3 class="text-center">Când?</h3>
-          Sâmbătă, 20 Octombrie 2018<br/>
-          10:00 - 11:00 - Check-in<br/>
+          Sâmbătă, 19 Octombrie 2019<br/>
+          09:30 - 11:00 - Check-in<br/>
           11:00 - Startul competiției<br/>
           17:00 - Încheierea competiției<br/>
           17:30 - Festivitatea de premiere<br/>
@@ -95,18 +95,20 @@
         <div class="col-sm-3"></div>
         <div class="col-sm-6 pl-2">
           <div class="rect-path">
-            -O echipă este formată din minim 3 membri, maxim 4;<br/>
-            -În cazul în care sunteți 2 persoane și vreți să participați împreună, vă veți înscrie amândoi individual și
-            veți menționa că doriți să fiți în aceeași echipă în câmpul destinat pentru acest caz;<br/>
+            -O echipă este formată din 3 membri, fiecare având un rol specific;<br/>
+            -Cel puțin doi membri trebuie să fie din cadrul facultății de Automatică și Calculatoare;<br/>
+            -În cazul în care sunteți 2 persoane și vreți să participați împreună, vă veți înscrie amândoi individual, cu condiția ca amândoi să fiți studenți la facultatea de Automatică și Calculatoare și veți menționa că doriți să fiți în aceeași echipă în câmpul destinat pentru acest caz;<br/>
           </div>
         </div>
         <div class="col-sm-3"></div>
       </div>
       <div class="row mt-5">
         <div class="col-lg-2"></div>
-        <div class="col-lg-4 text-center mb-3 mb-lg-0 align-middle"><a id="btn-reg-indiv" [routerLink]="'/register-solo'">
+        <div class="col-lg-4 text-center mb-3 mb-lg-0 align-middle"><a id="btn-reg-indiv"
+                                                                       [routerLink]="'/register-solo'">
           Mă înscriu individual</a></div>
-        <div class="col-lg-4 text-center mt-5 mt-lg-0 align-middle"><a id="btn-reg-echipa" [routerLink]="'/register-team'">
+        <div class="col-lg-4 text-center mt-5 mt-lg-0 align-middle"><a id="btn-reg-echipa"
+                                                                       [routerLink]="'/register-team'">
           Mă înscriu cu echipa</a></div>
         <div class="col-lg-2"></div>
       </div>
@@ -115,7 +117,7 @@
 </section>
 
 <!-- Guide Section -->
-<section id="guide">
+<section id="guide" style="padding-top: 50px;">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 text-center">
@@ -151,7 +153,7 @@
     </div>
 
     <div class="row mt-5 align-items-center">
-<!--      todo: adauga parteneri aici-->
+      <img src="../../../assets/parteners/logo_complet.svg" id="logo_leplace" (click)="goToLeplace()"/>
     </div>
   </div>
 </section>
@@ -181,17 +183,20 @@
           <div class="container rect-path text-left">
             <div class="form-group">
               <label for="contactName">Nume:</label>
-              <input formControlName="name" type="text" name="Nume" class="form-control" id="contactName" placeholder="Ion Popescu" required>
+              <input formControlName="name" type="text" name="Nume" class="form-control" id="contactName"
+                     placeholder="Ion Popescu" required>
             </div>
             <div class="form-group">
               <label for="contactEmail">Adresă de email:</label>
-              <input formControlName="email" type="email" name="Email" class="form-control" id="contactEmail" aria-describedby="emailHelp"
+              <input formControlName="email" type="email" name="Email" class="form-control" id="contactEmail"
+                     aria-describedby="emailHelp"
                      placeholder="ion.popescu@xyz.com" required>
               <small id="emailHelp" class="form-text text-muted">Datele tale vor ramane confidentiale.</small>
             </div>
             <div class="form-group">
               <label for="message">Mesaj:</label>
-              <textarea formControlName="message" name="Mesaj" class="form-control" id="message" rows="3" required></textarea>
+              <textarea formControlName="message" name="Mesaj" class="form-control" id="message" rows="3"
+                        required></textarea>
             </div>
           </div>
         </div>

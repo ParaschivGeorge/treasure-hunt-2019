@@ -31,7 +31,7 @@ h1 {
 }
 
 #ghid {
-  margin-top: 8vw;
+  margin-top: 100px;
 }
 
 /*  Regulament  */
@@ -46,13 +46,5 @@ h1 {
     background-size: 100% auto;
     font-family: "Open Sans", sans-serif;
     color: #603813;
-  }
-
-  #ghid {
-    margin-top: 16vw;
-  }
-
-  #titlu {
-    margin-top: 25vw;
   }
 }

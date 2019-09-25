@@ -37,7 +37,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.contactForm.valueChanges.subscribe(() => { this.contactSuccess = false; this.contactError = false; });
     this.mainService.navigationSubject.asObservable().subscribe(
-      section => this.scrollToElement(section)
+      section => {
+        if (this.router.url === '/home/' + section) {
+          this.scrollToElement(section);
+        }
+        this.router.navigate(['home', section]);
+        console.log(this.router.url);
+      }
     );
     this.route.params.subscribe(params => {
       if (params && params.section) {
@@ -77,5 +83,9 @@ export class HomeComponent implements OnInit {
           this.contactError = true;
         });
     }
+  }
+
+  goToLeplace() {
+    window.open('https://www.leplace.online/', '_blank');
   }
 }

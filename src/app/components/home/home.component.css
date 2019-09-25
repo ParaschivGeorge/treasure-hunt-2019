@@ -4,8 +4,14 @@
 */
 
 /*  Home page  */
+
 #home {
   padding-bottom: 10vw;
+}
+
+#logo_leplace {
+  margin: auto;
+  cursor: pointer;
 }
 
 .logo-th {
