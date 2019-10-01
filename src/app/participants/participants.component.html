@@ -1,6 +1,7 @@
 <section class="container" style="margin-top: 100px;">
   <table *ngIf="participants" class="table rect-path">
     <tr>
+      <th>Nr.</th>
       <th>Echipa</th>
       <th>Nume</th>
       <th>Prenume</th>
@@ -9,7 +10,8 @@
       <th>Facebook</th>
       <th>Prieten</th>
     </tr>
-    <tr *ngFor="let participants of participants">
+    <tr *ngFor="let participants of participants; let i = index">
+      <td>{{i}}</td>
       <td>{{participants.payload.doc.data().team}}</td>
       <td>{{participants.payload.doc.data().lastName}}</td>
       <td>{{participants.payload.doc.data().firstName}}</td>
