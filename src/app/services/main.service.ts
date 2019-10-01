@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
-import {Subject} from 'rxjs';
-import {AngularFirestore} from '@angular/fire/firestore';
+import {Observable, Subject} from 'rxjs';
+import {AngularFirestore, DocumentChangeAction} from '@angular/fire/firestore';
 import {ContactMessage} from '../models/contact-message';
 import {Participant} from '../models/participant';
 
@@ -37,5 +37,13 @@ export class MainService {
           resolve(res);
         }, err => reject(err));
     });
+  }
+
+  getContactMessages(): Observable<any> {
+    return this.firestore.collection('contactMessages').snapshotChanges();
+  }
+
+  getParticipants(): Observable<any> {
+    return this.firestore.collection('participants', ref => ref.orderBy('team')).snapshotChanges();
   }
 }

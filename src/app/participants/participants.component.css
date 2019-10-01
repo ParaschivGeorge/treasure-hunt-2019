@@ -1,0 +1,6 @@
+.rect-path {
+  background: rgba(205, 163, 79, 0.7);
+  padding: 10px 24px;
+  border-radius: 15px;
+  border: 7px dashed #603813;
+}

@@ -12,6 +12,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {AngularFireModule} from '@angular/fire';
 import {environment} from '../environments/environment';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import { ContactMessagesComponent } from './components/contact-messages/contact-messages.component';
+import { ParticipantsComponent } from './participants/participants.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
     HomeComponent,
     RegisterSoloComponent,
     RegisterTeamComponent,
-    GuideComponent
+    GuideComponent,
+    ContactMessagesComponent,
+    ParticipantsComponent
   ],
   imports: [
     BrowserModule,

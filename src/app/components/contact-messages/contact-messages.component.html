@@ -1,0 +1,14 @@
+<section class="container" style="margin-top: 100px;">
+  <table *ngIf="contactMessages" class="table rect-path">
+    <tr>
+      <th>Nume</th>
+      <th>Email</th>
+      <th>Mesaj</th>
+    </tr>
+    <tr *ngFor="let contactMessage of contactMessages">
+      <td>{{contactMessage.payload.doc.data().name}}</td>
+      <td>{{contactMessage.payload.doc.data().email}}</td>
+      <td>{{contactMessage.payload.doc.data().message}}</td>
+    </tr>
+  </table>
+</section>
