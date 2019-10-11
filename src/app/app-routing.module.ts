@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: 'register-solo', component: RegisterSoloComponent},
   { path: 'register-team', component: RegisterTeamComponent},
   { path: 'guide', component: GuideComponent},
-  { path: 'contactMessages', component: ContactMessagesComponent},
-  { path: 'participants', component: ParticipantsComponent},
+  // { path: 'contactMessages', component: ContactMessagesComponent},
+  // { path: 'participants', component: ParticipantsComponent},
   { path: '**', redirectTo: 'home/welcome' }
 ];
 

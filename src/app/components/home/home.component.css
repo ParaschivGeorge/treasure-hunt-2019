@@ -9,11 +9,8 @@
   padding-bottom: 10vw;
 }
 
-#logo_leplace {
-  margin: 0 auto;
+.partners-imgs img {
   cursor: pointer;
-  max-width: 300px;
-  max-height: 83px;
 }
 
 .logo-th {

@@ -88,4 +88,24 @@ export class HomeComponent implements OnInit {
   goToLeplace() {
     window.open('https://www.leplace.online/', '_blank');
   }
+
+  goToAmericanExperience() {
+    window.open('https://www.americanexperience.ro/', '_blank');
+  }
+
+  goToFirstCopy() {
+    window.open('http://firstcopy.ro/index.html', '_blank');
+  }
+
+  goToLasertagArena() {
+    window.open('http://www.lasertag-arena.ro/', '_blank');
+  }
+
+  goToInfoSystems() {
+    window.open('https://www.infosys.com/romania-digital-innovation-center/', '_blank');
+  }
+
+  goToConstantinNautics() {
+    window.open('https://constantinnautics.ro/', '_blank');
+  }
 }
