@@ -11,7 +11,7 @@ import {ContactMessage} from '../../models/contact-message';
 })
 export class HomeComponent implements OnInit {
 
-  sections = ['welcome', 'register', 'guide', 'partners', 'contact', 'event'];
+  sections = ['welcome', 'guide', 'partners', 'contact', 'event'];
   section: string;
   contactSuccess = false;
   contactError = false;
