@@ -10,8 +10,8 @@ import {ParticipantsComponent} from './participants/participants.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home/welcome', pathMatch: 'full'},
   { path: 'home/:section', component: HomeComponent},
-  { path: 'register-solo', component: RegisterSoloComponent},
-  { path: 'register-team', component: RegisterTeamComponent},
+  // { path: 'register-solo', component: RegisterSoloComponent},
+  // { path: 'register-team', component: RegisterTeamComponent},
   { path: 'guide', component: GuideComponent},
   // { path: 'contactMessages', component: ContactMessagesComponent},
   // { path: 'participants', component: ParticipantsComponent},
