@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MainService} from '../services/main.service';
 
 @Component({
@@ -10,11 +10,17 @@ export class ParticipantsComponent implements OnInit {
 
   participants: any[] = null;
 
-  constructor(private mainService: MainService) { }
+  constructor(private mainService: MainService) {
+  }
 
   ngOnInit() {
     this.mainService.getParticipants().subscribe(
-      res => { this.participants = res; console.log(res); }
+      res => {
+        this.participants = res;
+        console.log(res);
+        // const participants = JSON.parse(JSON.stringify(res));
+        // console.log(res.map(p => { console.log(p.payload.doc.data); return p.payload.doc.data(); }));
+      }
     );
   }
 }
