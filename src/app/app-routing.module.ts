@@ -6,6 +6,8 @@ import {RegisterTeamComponent} from './components/register-team/register-team.co
 import {GuideComponent} from './components/guide/guide.component';
 import {ContactMessagesComponent} from './components/contact-messages/contact-messages.component';
 import {ParticipantsComponent} from './participants/participants.component';
+import {StoryUnlockComponent} from './components/story-unlock/story-unlock.component';
+import {StoryUnlockRrService} from './services/story-unlock-rr.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home/welcome', pathMatch: 'full'},
@@ -15,6 +17,18 @@ const routes: Routes = [
   { path: 'guide', component: GuideComponent},
   // { path: 'contactMessages', component: ContactMessagesComponent},
   { path: 'participants', component: ParticipantsComponent},
+  { path: 'unlock', children: [
+      {path: 'ateneul', component: StoryUnlockComponent, data: { eventId: 5, storyId: 321}, resolve: {storyUnlock: StoryUnlockRrService}},
+      {path: 'polivalenta', component: StoryUnlockComponent, data: { eventId: 5, storyId: 322}, resolve: {storyUnlock: StoryUnlockRrService}},
+      {path: 'universitate', component: StoryUnlockComponent, data: { eventId: 5, storyId: 326}, resolve: {storyUnlock: StoryUnlockRrService}},
+      {path: 'herastrau', component: StoryUnlockComponent, data: { eventId: 5, storyId: 323}, resolve: {storyUnlock: StoryUnlockRrService}},
+      {path: 'arene', component: StoryUnlockComponent, data: { eventId: 5, storyId: 324}, resolve: {storyUnlock: StoryUnlockRrService}},
+      {path: 'infosys', component: StoryUnlockComponent, data: { eventId: 5, storyId: 319}, resolve: {storyUnlock: StoryUnlockRrService}},
+      {path: 'vitan', component: StoryUnlockComponent, data: { eventId: 5, storyId: 327}, resolve: {storyUnlock: StoryUnlockRrService}},
+      {path: 'tei', component: StoryUnlockComponent, data: { eventId: 5, storyId: 325}, resolve: {storyUnlock: StoryUnlockRrService}},
+      {path: 'taberei', component: StoryUnlockComponent, data: { eventId: 5, storyId: 320}, resolve: {storyUnlock: StoryUnlockRrService}},
+      {path: 'bazilescu', component: StoryUnlockComponent, data: { eventId: 5, storyId: 317}, resolve: {storyUnlock: StoryUnlockRrService}},
+    ]},
   { path: '**', redirectTo: 'home/welcome' }
 ];
 

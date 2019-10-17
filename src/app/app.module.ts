@@ -14,6 +14,8 @@ import {environment} from '../environments/environment';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import { ContactMessagesComponent } from './components/contact-messages/contact-messages.component';
 import { ParticipantsComponent } from './participants/participants.component';
+import { StoryUnlockComponent } from './components/story-unlock/story-unlock.component';
+import {QRCodeModule} from 'angular2-qrcode';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ParticipantsComponent } from './participants/participants.component';
     RegisterTeamComponent,
     GuideComponent,
     ContactMessagesComponent,
-    ParticipantsComponent
+    ParticipantsComponent,
+    StoryUnlockComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { ParticipantsComponent } from './participants/participants.component';
     HttpClientModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    QRCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
