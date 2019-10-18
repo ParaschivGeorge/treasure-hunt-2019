@@ -11,8 +11,8 @@ import { AppGuideComponent } from './components/app-guide/app-guide.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home/welcome', pathMatch: 'full'},
   { path: 'home/:section', component: HomeComponent},
-  { path: 'register-solo', component: RegisterSoloComponent},
-  { path: 'register-team', component: RegisterTeamComponent},
+  // { path: 'register-solo', component: RegisterSoloComponent},
+  // { path: 'register-team', component: RegisterTeamComponent},
   { path: 'guide', component: GuideComponent},
   { path: 'app-guide', component: AppGuideComponent},
   // { path: 'contactMessages', component: ContactMessagesComponent},
