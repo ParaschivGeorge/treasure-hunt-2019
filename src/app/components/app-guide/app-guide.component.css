@@ -1,0 +1,50 @@
+.rect-path {
+  background: rgba(205, 163, 79, 0.7);
+  padding: 10px 24px;
+  border-radius: 15px;
+  border: 7px dashed #603813;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 1.4em;
+  font-weight: 600;
+  background: url("../../../assets/background_titlu.svg") no-repeat scroll 0 0 transparent;
+  background-size: 100% 100%;
+  color: #603813;
+  padding: 3.5vh;
+  margin: 2vh 2vh;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+/*  Ghid  */
+#titlu {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+#ghid {
+  margin-top: 100px;
+}
+
+/*  Regulament  */
+#regulament {
+  margin-top: 2vw;
+  margin-bottom: 5vw;
+}
+
+@media (max-width : 576px) {
+  body {
+    background: #e5e5e5 url("../../../assets/ghid/fundal_ghid.svg") no-repeat;
+    background-size: 100% auto;
+    font-family: "Open Sans", sans-serif;
+    color: #603813;
+  }
+}

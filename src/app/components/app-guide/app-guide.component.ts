@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-app-guide',
@@ -9,7 +9,14 @@ export class AppGuideComponent implements OnInit {
 
   constructor() { }
 
+  public innerWidth: any;
+
   ngOnInit() {
+    this.innerWidth = window.innerWidth;
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
+  }
 }

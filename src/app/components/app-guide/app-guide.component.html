@@ -1,3 +1,8 @@
-<p>
-  app-guide works!
-</p>
+<section class="container" id="ghid" *ngIf="innerWidth > 600">
+
+  <div class="rect-path">
+    <iframe src="https://drive.google.com/file/d/1eUDm_Af_aaq7PBmUttv19s5ExMpnKOjp/preview" style="width:100%; height:600px; border:0;"></iframe>
+  </div>
+</section>
+
+<iframe *ngIf="innerWidth <= 600" src="https://drive.google.com/file/d/1eUDm_Af_aaq7PBmUttv19s5ExMpnKOjp/preview" style="width:100%; height: 90vh; border:0; margin-top: 50px;"></iframe>

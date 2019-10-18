@@ -14,6 +14,7 @@ import {environment} from '../environments/environment';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import { ContactMessagesComponent } from './components/contact-messages/contact-messages.component';
 import { ParticipantsComponent } from './participants/participants.component';
+import {AppGuideComponent} from './components/app-guide/app-guide.component';
 
 @NgModule({
   declarations: [

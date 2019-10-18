@@ -28,4 +28,8 @@ export class AppComponent {
   toggleCollapsed(): void {
     this.collapsed = !this.collapsed;
   }
+
+  openAppGuide() {
+    window.open('https://drive.google.com/file/d/1eUDm_Af_aaq7PBmUttv19s5ExMpnKOjp/view', '_blank');
+  }
 }
