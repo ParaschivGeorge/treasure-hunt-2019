@@ -16,6 +16,7 @@ import { ContactMessagesComponent } from './components/contact-messages/contact-
 import { ParticipantsComponent } from './participants/participants.component';
 import { StoryUnlockComponent } from './components/story-unlock/story-unlock.component';
 import {QRCodeModule} from 'angular2-qrcode';
+import { LeaderboardComponent } from './components/leaderboard/leaderboard.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {QRCodeModule} from 'angular2-qrcode';
     GuideComponent,
     ContactMessagesComponent,
     ParticipantsComponent,
-    StoryUnlockComponent
+    StoryUnlockComponent,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {MainService} from './services/main.service';
 
@@ -11,8 +11,9 @@ export class AppComponent {
   title = 'lsac-treasure-hunt';
   collapsed = true;
   section: string;
+  url;
 
-  constructor(private route: ActivatedRoute, private router: Router, private mainService: MainService) {
+  constructor(private route: ActivatedRoute, public router: Router, private mainService: MainService) {
   }
 
   changeSection(section: string) {

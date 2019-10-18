@@ -9,7 +9,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 })
 export class StoryUnlockRrService implements Resolve<StoryUnlock> {
 
-  url = ' https://leplace.leplace-api.com/events/v2/admin/get-story-unlock-code';
+  url = 'https://leplace.leplace-api.com/events/v2/admin/get-story-unlock-code';
 
   constructor(private http: HttpClient) {
   }
