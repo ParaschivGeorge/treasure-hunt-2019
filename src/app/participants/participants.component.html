@@ -1,24 +1,16 @@
 <section class="container" style="margin-top: 100px;">
-  <table *ngIf="participants" class="table rect-path">
+  <table *ngIf="teams" class="table rect-path">
     <tr>
       <th>Nr.</th>
       <th>Echipa</th>
-      <th>Nume</th>
-      <th>Prenume</th>
-      <th>Telefon</th>
-      <th>Facultate</th>
-      <th>Facebook</th>
-      <th>Prieten</th>
+      <th>Membri</th>
     </tr>
-    <tr *ngFor="let participants of participants; let i = index">
-      <td>{{i}}</td>
-      <td>{{participants.payload.doc.data().team}}</td>
-      <td>{{participants.payload.doc.data().lastName}}</td>
-      <td>{{participants.payload.doc.data().firstName}}</td>
-      <td>{{participants.payload.doc.data().phone}}</td>
-      <td>{{participants.payload.doc.data().university}}</td>
-      <td>{{participants.payload.doc.data().facebookLink}}</td>
-      <td>{{participants.payload.doc.data().preferredTeammate}}</td>
+    <tr *ngFor="let team of teams; let i = index">
+      <td>{{i + 1}}</td>
+      <td>{{team.team}}</td>
+      <td>{{team.members[0]}}<br/>
+        {{team.members[1]}}<br/>
+        {{team.members[2]}}</td>
     </tr>
   </table>
 </section>

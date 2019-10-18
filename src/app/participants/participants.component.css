@@ -4,3 +4,16 @@
   border-radius: 15px;
   border: 7px dashed #603813;
 }
+
+.table td {
+  vertical-align: inherit !important;
+}
+
+table.table {
+  max-width: 600px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}

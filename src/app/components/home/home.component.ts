@@ -108,4 +108,16 @@ export class HomeComponent implements OnInit {
   goToConstantinNautics() {
     window.open('https://constantinnautics.ro/', '_blank');
   }
+
+  goToComics() {
+    window.open('https://comicsclub.ro/', '_blank');
+  }
+
+  goToUPB() {
+    window.open('https://upb.ro/en/', '_blank');
+  }
+
+  goToExcelsior() {
+    window.open('https://www.teatrul-excelsior.ro/', '_blank');
+  }
 }

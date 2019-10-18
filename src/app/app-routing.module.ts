@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'guide', component: GuideComponent},
   { path: 'app-guide', component: AppGuideComponent},
   // { path: 'contactMessages', component: ContactMessagesComponent},
-  // { path: 'participants', component: ParticipantsComponent},
+  { path: 'participants', component: ParticipantsComponent},
   { path: '**', redirectTo: 'home/welcome' }
 ];
 
