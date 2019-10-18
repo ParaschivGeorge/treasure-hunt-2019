@@ -23,7 +23,8 @@ import { ParticipantsComponent } from './participants/participants.component';
     RegisterTeamComponent,
     GuideComponent,
     ContactMessagesComponent,
-    ParticipantsComponent
+    ParticipantsComponent,
+    AppGuideComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +33,7 @@ import { ParticipantsComponent } from './participants/participants.component';
     HttpClientModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

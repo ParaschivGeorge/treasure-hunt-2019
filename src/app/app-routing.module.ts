@@ -6,6 +6,7 @@ import {RegisterTeamComponent} from './components/register-team/register-team.co
 import {GuideComponent} from './components/guide/guide.component';
 import {ContactMessagesComponent} from './components/contact-messages/contact-messages.component';
 import {ParticipantsComponent} from './participants/participants.component';
+import { AppGuideComponent } from './components/app-guide/app-guide.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home/welcome', pathMatch: 'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'register-solo', component: RegisterSoloComponent},
   { path: 'register-team', component: RegisterTeamComponent},
   { path: 'guide', component: GuideComponent},
+  { path: 'app-guide', component: AppGuideComponent},
   // { path: 'contactMessages', component: ContactMessagesComponent},
   // { path: 'participants', component: ParticipantsComponent},
   { path: '**', redirectTo: 'home/welcome' }
