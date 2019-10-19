@@ -2,14 +2,14 @@
   <table *ngIf="contactMessages" class="table rect-path">
     <tr>
       <th>Nr.</th>
-      <th>Nume</th>
-      <th>Email</th>
+      <th>Echipa</th>
+      <th>Telefon</th>
       <th>Mesaj</th>
     </tr>
     <tr *ngFor="let contactMessage of contactMessages; let i = index">
       <td>{{i}}</td>
-      <td>{{contactMessage.payload.doc.data().name}}</td>
-      <td>{{contactMessage.payload.doc.data().email}}</td>
+      <td>{{contactMessage.payload.doc.data().team}}</td>
+      <td>{{contactMessage.payload.doc.data().phone}}</td>
       <td>{{contactMessage.payload.doc.data().message}}</td>
     </tr>
   </table>
