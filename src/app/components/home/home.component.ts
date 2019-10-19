@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
   contactError = false;
 
   contactForm: FormGroup = new FormGroup({
-    name: new FormControl(null, [Validators.required, Validators.pattern('[a-zA-Z ]*')]),
-    email: new FormControl(null, [Validators.required, Validators.email]),
+    team: new FormControl(null, [Validators.required]),
+    phone: new FormControl(null, [Validators.required, Validators.pattern('07[0-9]{8}')]),
     message: new FormControl(null, Validators.required)
   });
 
